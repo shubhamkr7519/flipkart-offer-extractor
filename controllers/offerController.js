@@ -1,4 +1,3 @@
-// controllers/offerController.js
 const Offer = require('../models/Offer');
 
 function parseDiscount(summary, amountToPay) {
@@ -22,35 +21,35 @@ function parseDiscount(summary, amountToPay) {
   const genericDiscount = genericDiscountMatch ? parseInt(genericDiscountMatch[1]) : null;
   const minOrder = minOrderMatch ? parseInt(minOrderMatch[3]) : 0;
 
-  // STEP 1: Respect minOrder
+  // min order
   if (amountToPay < minOrder) return 0;
 
   let discount = 0;
   const fiftyPercentCap = Math.floor(amountToPay * 0.5);
 
-  // STEP 2: Flat discount
+  // flat discount
   if (flatDiscount !== null) {
     discount = flatDiscount;
   }
 
-  // STEP 3: Cashback
+  // cashback
   if (cashback !== null) {
     discount = Math.max(discount, cashback);
   }
 
-  // STEP 4: Generic discount (only if percent/flat not found)
+  // generic discount (only if percent/flat not found)
   if (genericDiscount !== null && percent === null && flatDiscount === null) {
     discount = Math.max(discount, genericDiscount);
   }
 
-  // STEP 5: Percentage logic
+  // % logic
   if (percent !== null) {
     const rawPercent = (percent / 100) * amountToPay;
     const cap = maxCap !== null ? Math.min(rawPercent, maxCap) : rawPercent;
     discount = Math.max(discount, cap);
   }
 
-  // STEP 6: Final Cap — don't allow > 50% of amount
+  // cap — don't allow > 50% of amount
   return Math.min(discount, fiftyPercentCap, amountToPay);
 };
 
@@ -67,7 +66,7 @@ async function ingestOffers(req, res) {
     let newOffersCreated = 0;
 
     for (const offer of offers) {
-      // Defensive: skip if adjustment_id is missing (can't ensure uniqueness)
+      //skip if adjustment_id is missing (can't ensure uniqueness)
       if (!offer.adjustment_id) continue;
 
       const exists = await Offer.findOne({ adjustment_id: offer.adjustment_id });
@@ -78,7 +77,7 @@ async function ingestOffers(req, res) {
         banks.push("UPI");
       }
 
-      // Sort arrays for consistent storage (optional but good)
+      // sort arrays for consistent storage (optional but good)
       banks = banks.sort();
       const payment_instrument = (offer.contributors?.payment_instrument || []).sort();
       const emi_months = offer.contributors?.emi_months || [];

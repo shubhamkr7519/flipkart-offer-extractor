@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Optional npm cache directory
+.npm/
+
+# Local development files
+BackendDeveloper-TakeHomeAssignment.pdf
+test.js

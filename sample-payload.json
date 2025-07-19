@@ -1,0 +1,1326 @@
+{
+    "response_status": "SUCCESS",
+    "messages": [],
+    "notify_messages": [
+        {
+            "title": "Please ensure your card can be used for online transactions. ",
+            "type": "TEXT"
+        },
+        {
+            "title": "Know More",
+            "type": "OVERLAY_LINK",
+            "url": "/api/v1/info/rbi"
+        }
+    ],
+    "response_type": "PAYMENT_OPTIONS",
+    "token_version": "v3",
+    "disable_pay_button": false,
+    "disable_pay_timeout": 0,
+    "options": [
+        {
+            "applicable": true,
+            "selected": true,
+            "adjustments": {
+                "messages": [],
+                "exhausted_list": [],
+                "eligible_list": [
+                    {
+                        "adjustment_type": "INSTANT_DISCOUNT",
+                        "adjustment_sub_type": "PBO",
+                        "adjustment_id": "FPO250701194515LLXO5",
+                        "title": "Extra ₹10000 Off On selected  Bank TRNX",
+                        "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+                        "display_text": "Extra ₹10000 Off On selected  Bank TRNX",
+                        "amount_delta": 1000000,
+                        "is_discount": false,
+                        "is_charged": false,
+                        "incomplete_adjustment": false,
+                        "display_text_emi_row": false,
+                        "provider": "FLIPKART",
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "is_pboFeeApplicable": true,
+                        "offerTags": []
+                    }
+                ],
+                "adjustment_list": [
+                    {
+                        "adjustment_status": "APPLICABLE",
+                        "amount_delta": 1000000,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250701194515LLXO5",
+                            "title": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "display_text": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 1000000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 1000000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 1
+                            }
+                        },
+                        "is_pbo_fee_applicable": true,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250630202506KYC5F",
+                            "title": "1ADZ BOBCARD - EMI - 25k stepper",
+                            "summary": "Extra ₹500 off on BOBCARD EMI Transactions on 9 months and above tenures. Min Product Value ₹25000",
+                            "display_text": "Extra ₹500 off on BOBCARD EMI Transactions on 9 months and above tenures. Min Product Value ₹25000",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 2500000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 50000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for bank : SBI",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250701194127SO194",
+                            "title": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "display_text": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 1000000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 1000000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for bank : SBI",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250701194857KFHIY",
+                            "title": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "display_text": "Extra ₹10000 Off On selected  Bank TRNX",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 1000000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 1000000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250626182451RYQC7",
+                            "title": "1AAP IDFC - DC (select cards)",
+                            "summary": "5% off up to ₹750 on IDFC FIRST Power Women Platinum and Signature DebitCards. Min Txn Value: ₹5,000",
+                            "display_text": "5% off up to ₹750 on IDFC FIRST Power Women Platinum and Signature DebitCards. Min Txn Value: ₹5,000",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 500000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 75000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO2506301938399SY1F",
+                            "title": "1AAZ BOBCARD - EMI - RoC",
+                            "summary": "10% off up to ₹1,500 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+                            "display_text": "10% off up to ₹1,500 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 750000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 150000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250630192819C5TKJ",
+                            "title": "1AAZ BOBCARD - EMI - Mobiles",
+                            "summary": "10% off up to ₹1,250 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+                            "display_text": "10% off up to ₹1,250 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 750000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 125000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for bank : SBI",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "CASHBACK_ON_CARD",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250619134128USHPF",
+                            "title": "1AAA 5% Cashback on Flipkart Axis Bank",
+                            "summary": "5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter",
+                            "display_text": "5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 10000,
+                                "max_txn_value": 1000000000,
+                                "max_discount_per_txn": 400000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "CASHBACK_ON_CARD",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250626172916JI4VZ",
+                            "title": "Paytm UPI Offer",
+                            "summary": "Flat ₹10 Cashback on Paytm UPI Trxns. Min Order Value ₹500. Valid once per Paytm account",
+                            "display_text": "Flat ₹10 Cashback on Paytm UPI Trxns. Min Order Value ₹500. Valid once per Paytm account",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 50000,
+                                "max_txn_value": 10000000000,
+                                "max_discount_per_txn": 1000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "CASHBACK_ON_CARD",
+                            "adjustment_sub_type": "PBO",
+                            "adjustment_id": "FPO250619135528ZQIZW",
+                            "title": "1AAB 5% Cashback FK Axis - Debit card",
+                            "summary": "5% cashback on Axis Bank Flipkart Debit Card up to ₹750",
+                            "display_text": "5% cashback on Axis Bank Flipkart Debit Card up to ₹750",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 100,
+                                "max_txn_value": 10000000000,
+                                "max_discount_per_txn": 75000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "EMI_FULL_INTEREST_WAIVER",
+                            "adjustment_id": "FPO250705190116Z9YX8",
+                            "title": "No Cost EMI Upto 6 Months",
+                            "summary": "No Cost EMI Upto 6 Months",
+                            "display_text": "No Cost EMI Upto 6 Months",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 300000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 10000000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "EMI_FULL_INTEREST_WAIVER",
+                            "adjustment_id": "FPO250705190347GHR57",
+                            "title": "No Cost EMI Upto 6 Months",
+                            "summary": "No Cost EMI Upto 6 Months",
+                            "display_text": "No Cost EMI Upto 6 Months",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 300000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 10000000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    },
+                    {
+                        "adjustment_status": "FAILED",
+                        "amount_delta": 0,
+                        "convertible_units": 0,
+                        "is_selected": false,
+                        "failure_description": "Offer not applicable for payment instrument : CREDIT",
+                        "display_failure_description": false,
+                        "offer_details": {
+                            "adjustment_type": "INSTANT_DISCOUNT",
+                            "adjustment_sub_type": "EMI_FULL_INTEREST_WAIVER",
+                            "adjustment_id": "FPO250705185902AISC5",
+                            "title": "No Cost EMI Upto 6 Months",
+                            "summary": "No Cost EMI Upto 6 Months",
+                            "display_text": "No Cost EMI Upto 6 Months",
+                            "provider": "FLIPKART",
+                            "offer_txn_limits": {
+                                "min_txn_value": 300000,
+                                "max_txn_value": 100000000,
+                                "max_discount_per_txn": 10000000
+                            },
+                            "offer_aggregation_limits": {
+                                "max_discount_per_card": 0,
+                                "max_txns_for_offer": 0
+                            }
+                        },
+                        "is_pbo_fee_applicable": false,
+                        "offerTags": []
+                    }
+                ],
+                "original_amount": 115900600,
+                "you_pay_amount": 114900600,
+                "effective_pay_amount": 114900600,
+                "down_payment": 0,
+                "total_instant_discount_amount": 1000000,
+                "total_discount_amount": 1000000,
+                "cashback_amount": 0,
+                "total_emi_interest_discount": 0,
+                "emi_principal": 0,
+                "emi_interest_value": 0.0,
+                "emi_total_interest": 0,
+                "emi_installment": 0,
+                "total_emi_cost": 0,
+                "list_changed": false,
+                "sequence_number": 0,
+                "no_cost_emi_item_count": 0,
+                "show_item_level_button": false,
+                "is_recommended": false
+            },
+            "payment_instrument": "SAVED_CARD",
+            "display_text": "State Bank of India Credit Card",
+            "messages": [],
+            "section": "PREFERRED",
+            "priority": 0,
+            "provider": "FLIPKART",
+            "information": {
+                "logo_urls": {
+                    "primary": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/sbi-7804ae3e.svg"
+                }
+            },
+            "card_information": {
+                "masked_card_number": "xxxx xxxx xxxx 5623",
+                "card_number": "************5623",
+                "card_id": "TR240410174958479E526CCD74BD059A",
+                "card_network": "MASTERCARD",
+                "card_source": "DEFAULT",
+                "bank_code": "SBI",
+                "cvv_required": true,
+                "is_cvv_required": "REQUIRED",
+                "is_expiry_required": "REQUIRED",
+                "card_label": "State Bank of India Credit Card"
+            }
+        },
+        {
+            "applicable": true,
+            "selected": false,
+            "payment_instrument": "CREDIT",
+            "display_text": "Credit / Debit / ATM Card",
+            "messages": [
+                {
+                    "type": "INFO",
+                    "message": "Add and secure cards as per RBI guidelines"
+                }
+            ],
+            "status_code": "",
+            "section": "OTHERS",
+            "priority": 1,
+            "provider": "FLIPKART",
+            "information": {}
+        },
+        {
+            "applicable": true,
+            "selected": false,
+            "payment_instrument": "NET_OPTIONS",
+            "display_text": "Net Banking",
+            "messages": [
+                {
+                    "type": "INFO",
+                    "message": "This instrument has low success, use UPI or cards for better experience"
+                }
+            ],
+            "status_code": "",
+            "section": "OTHERS",
+            "priority": 2,
+            "provider": "FLIPKART",
+            "information": {}
+        },
+        {
+            "applicable": true,
+            "selected": false,
+            "payment_instrument": "EMI_OPTIONS",
+            "display_text": "EMI (Easy Installments)",
+            "messages": [],
+            "status_code": "",
+            "section": "OTHERS",
+            "priority": 3,
+            "provider": "FLIPKART",
+            "information": {}
+        },
+        {
+            "applicable": true,
+            "selected": false,
+            "payment_instrument": "EGV",
+            "display_text": "Gift Card",
+            "messages": [],
+            "status_code": "",
+            "status_message": "",
+            "section": "NEW_VOUCHERS",
+            "priority": 4,
+            "information": {},
+            "redeemed": 0,
+            "egv_payments": []
+        },
+        {
+            "applicable": false,
+            "selected": false,
+            "payment_instrument": "UPI",
+            "display_text": "UPI",
+            "messages": [
+                {
+                    "type": "INFO",
+                    "message": "Pay by any UPI app"
+                },
+                {
+                    "type": "ERROR",
+                    "message": "Sorry, UPI is currently not available for payments greater than Rs. 99999",
+                    "status_code": "NOT_APPLICABLE"
+                }
+            ],
+            "status_code": "",
+            "section": "OTHERS",
+            "priority": 2147483647,
+            "provider": "FLIPKART",
+            "information": {
+                "logo_urls": {
+                    "primary": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/UPI.gif"
+                }
+            }
+        },
+        {
+            "applicable": false,
+            "selected": false,
+            "payment_instrument": "COD",
+            "display_text": "Cash on Delivery",
+            "messages": [
+                {
+                    "type": "ERROR",
+                    "message": "Cash on Delivery(CoD) is not available for this order. It may not be supported for the product or selected area, or because of recent account activity.",
+                    "status_code": "NOT_APPLICABLE"
+                }
+            ],
+            "status_code": "NOT_AVAILABLE",
+            "status_message": "",
+            "section": "OTHERS",
+            "priority": 2147483647,
+            "information": {},
+            "callout": {}
+        }
+    ],
+    "price_summary": {
+        "remaining": 115900600,
+        "base_price": 115716300,
+        "item_count": 4,
+        "convertible_amount": [],
+        "price_details": [
+            {
+                "key": "PRICE",
+                "value": 115716300,
+                "item_count": 4,
+                "convertible_amount": []
+            }
+        ],
+        "breakup": [
+            {
+                "key": "packaging_charges",
+                "display_text": "Packaging Charges",
+                "value": 0,
+                "type": "DEFAULT"
+            },
+            {
+                "key": "pickup_charges",
+                "display_text": "Pickup Charges",
+                "value": 0,
+                "type": "DEFAULT"
+            },
+            {
+                "key": "protect_promise_fee",
+                "display_text": "Protect Promise Fee",
+                "value": 184300,
+                "type": "DEFAULT"
+            }
+        ],
+        "you_pay": [
+            {
+                "key": "AMOUNT_PAYABLE",
+                "value": 115900600,
+                "item_count": 0,
+                "convertible_amount": []
+            }
+        ],
+        "notify_messages": []
+    },
+    "sla_summary": {
+        "prepaid": 1752822075285,
+        "postpaid": 1752822075285
+    },
+    "reservation_details": [
+        {
+            "reservationStatus": "RESERVED",
+            "presentTs": 1752822075285,
+            "ttl": 1752822914761,
+            "message": "You have time till July 18,2025,12:45:14 PM to complete your order."
+        }
+    ],
+    "reservation_expiry_action": {
+        "url": "https://2.rome.api.flipkart.com/api/3/checkout/pgCancelResponse/desktop?redirect_domain=https://www.flipkart.com&callback=true",
+        "target": "https://2.rome.api.flipkart.com/api/3/checkout/pgCancelResponse/desktop?redirect_domain=https://www.flipkart.com&callback=true",
+        "action_type": "EXTERNAL_REDIRECTION",
+        "http_method": "POST",
+        "parameters": {
+            "reason_code": "RESERVATION_EXPIRED",
+            "merchant_transaction_id": "OD4349677256352251-TX-00",
+            "transaction_status": "FAILED"
+        }
+    },
+    "back_action": {
+        "url": "https://2.rome.api.flipkart.com/api/3/checkout/pgCancelResponse/desktop?redirect_domain=https://www.flipkart.com&callback=true",
+        "target": "https://2.rome.api.flipkart.com/api/3/checkout/pgCancelResponse/desktop?redirect_domain=https://www.flipkart.com&callback=true",
+        "action_type": "EXTERNAL_REDIRECTION",
+        "http_method": "POST",
+        "parameters": {
+            "reason_code": "CANCELLED_BY_USER",
+            "merchant_transaction_id": "OD4349677256352251-TX-00",
+            "transaction_status": "FAILED"
+        }
+    },
+    "offer_banners": [
+        {
+            "adjustment_sub_type": "EMI_FULL_INTEREST_WAIVER",
+            "adjustment_id": "FPO250705185902AISC5",
+            "summary": "No Cost EMI Upto 6 Months",
+            "contributors": {
+                "payment_instrument": [
+                    "EMI_OPTIONS"
+                ],
+                "banks": [
+                    "ICICI"
+                ],
+                "emi_months": [
+                    "6"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/icici-2c9f480b.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "EMI_FULL_INTEREST_WAIVER",
+            "adjustment_id": "FPO250705190116Z9YX8",
+            "summary": "No Cost EMI Upto 6 Months",
+            "contributors": {
+                "payment_instrument": [
+                    "EMI_OPTIONS"
+                ],
+                "banks": [
+                    "SBI"
+                ],
+                "emi_months": [
+                    "6"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/sbi-7804ae3e.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "EMI_FULL_INTEREST_WAIVER",
+            "adjustment_id": "FPO250705190347GHR57",
+            "summary": "No Cost EMI Upto 6 Months",
+            "contributors": {
+                "payment_instrument": [
+                    "EMI_OPTIONS"
+                ],
+                "banks": [
+                    "KOTAK"
+                ],
+                "emi_months": [
+                    "6"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/kotak-a0db9a54.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250701194857KFHIY",
+            "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+            "contributors": {
+                "payment_instrument": [
+                    "CREDIT",
+                    "CREDIT",
+                    "EMI_OPTIONS",
+                    "NET_OPTIONS"
+                ],
+                "banks": [
+                    "ICICI"
+                ],
+                "emi_months": [
+                    "0",
+                    "3",
+                    "6",
+                    "9",
+                    "12",
+                    "18",
+                    "24"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/icici-2c9f480b.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250701194515LLXO5",
+            "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+            "contributors": {
+                "payment_instrument": [
+                    "CREDIT",
+                    "CREDIT",
+                    "EMI_OPTIONS",
+                    "NET_OPTIONS"
+                ],
+                "banks": [
+                    "SBI"
+                ],
+                "emi_months": [
+                    "0",
+                    "3",
+                    "6",
+                    "9",
+                    "12",
+                    "18",
+                    "24"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/sbi-7804ae3e.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250701194127SO194",
+            "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+            "contributors": {
+                "payment_instrument": [
+                    "CREDIT",
+                    "CREDIT",
+                    "EMI_OPTIONS",
+                    "NET_OPTIONS"
+                ],
+                "banks": [
+                    "KOTAK"
+                ],
+                "emi_months": [
+                    "0",
+                    "3",
+                    "6",
+                    "9",
+                    "12",
+                    "18",
+                    "24"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/kotak-a0db9a54.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250626172916JI4VZ",
+            "summary": "Flat ₹10 Cashback on Paytm UPI Trxns. Min Order Value ₹500. Valid once per Paytm account",
+            "contributors": {
+                "payment_instrument": [
+                    "UPI_COLLECT",
+                    "UPI_INTENT"
+                ],
+                "banks": [],
+                "emi_months": [
+                    "0"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://rukminim1.flixcart.com/www/64/64/promos/02/06/2022/a89d0cb0-9155-4545-bd47-c5c53c8d50b7.png",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250626182451RYQC7",
+            "summary": "5% off up to ₹750 on IDFC FIRST Power Women Platinum and Signature DebitCards. Min Txn Value: ₹5,000",
+            "contributors": {
+                "payment_instrument": [
+                    "CREDIT"
+                ],
+                "banks": [
+                    "IDFC"
+                ],
+                "emi_months": [
+                    "0"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://rukminim1.flixcart.com/www/128/128/promos/01/09/2023/c00c8f1e-1ae7-49d1-b7e5-0e2df3d11ef7.png?q=100",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250619134128USHPF",
+            "summary": "5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter",
+            "contributors": {
+                "payment_instrument": [
+                    "CREDIT"
+                ],
+                "banks": [
+                    "FLIPKARTAXISBANK"
+                ],
+                "emi_months": [
+                    "0"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/axis-78501b36.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250619135528ZQIZW",
+            "summary": "5% cashback on Axis Bank Flipkart Debit Card up to ₹750",
+            "contributors": {
+                "payment_instrument": [
+                    "CREDIT"
+                ],
+                "banks": [
+                    "FLIPKARTAXISBANK"
+                ],
+                "emi_months": [
+                    "0"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/axis-78501b36.svg",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250630202506KYC5F",
+            "summary": "Extra ₹500 off on BOBCARD EMI Transactions on 9 months and above tenures. Min Product Value ₹25000",
+            "contributors": {
+                "payment_instrument": [
+                    "EMI_OPTIONS"
+                ],
+                "banks": [
+                    "BOBARODA"
+                ],
+                "emi_months": [
+                    "9",
+                    "12",
+                    "18",
+                    "24",
+                    "36"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://rukminim1.flixcart.com/www/96/96/promos/31/07/2024/fb560aa6-1104-492b-b747-f458dbae837b.png?q=100",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO250630192819C5TKJ",
+            "summary": "10% off up to ₹1,250 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+            "contributors": {
+                "payment_instrument": [
+                    "EMI_OPTIONS"
+                ],
+                "banks": [
+                    "BOBARODA"
+                ],
+                "emi_months": [
+                    "6",
+                    "9",
+                    "12",
+                    "18",
+                    "24",
+                    "36"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://rukminim1.flixcart.com/www/96/96/promos/31/07/2024/fb560aa6-1104-492b-b747-f458dbae837b.png?q=100",
+            "type": {
+                "value": "non-collapsable"
+            }
+        },
+        {
+            "adjustment_sub_type": "PBO",
+            "adjustment_id": "FPO2506301938399SY1F",
+            "summary": "10% off up to ₹1,500 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+            "contributors": {
+                "payment_instrument": [
+                    "EMI_OPTIONS"
+                ],
+                "banks": [
+                    "BOBARODA"
+                ],
+                "emi_months": [
+                    "6",
+                    "9",
+                    "12",
+                    "18",
+                    "24",
+                    "36"
+                ],
+                "card_networks": []
+            },
+            "display_tags": [
+                "PAYMENT_OPTIONS"
+            ],
+            "image": "https://rukminim1.flixcart.com/www/96/96/promos/31/07/2024/fb560aa6-1104-492b-b747-f458dbae837b.png?q=100",
+            "type": {
+                "value": "non-collapsable"
+            }
+        }
+    ],
+    "offer_sections": {
+        "PBO": {
+            "title": "Partner offers",
+            "offers": [
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250701194857KFHIY",
+                    "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+                    "contributors": {
+                        "payment_instrument": [
+                            "CREDIT",
+                            "CREDIT",
+                            "EMI_OPTIONS",
+                            "NET_OPTIONS"
+                        ],
+                        "banks": [
+                            "ICICI"
+                        ],
+                        "emi_months": [
+                            "0",
+                            "3",
+                            "6",
+                            "9",
+                            "12",
+                            "18",
+                            "24"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/icici-2c9f480b.svg"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250701194515LLXO5",
+                    "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+                    "contributors": {
+                        "payment_instrument": [
+                            "CREDIT",
+                            "CREDIT",
+                            "EMI_OPTIONS",
+                            "NET_OPTIONS"
+                        ],
+                        "banks": [
+                            "SBI"
+                        ],
+                        "emi_months": [
+                            "0",
+                            "3",
+                            "6",
+                            "9",
+                            "12",
+                            "18",
+                            "24"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/sbi-7804ae3e.svg"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250701194127SO194",
+                    "summary": "Extra ₹10000 Off On selected  Bank TRNX",
+                    "contributors": {
+                        "payment_instrument": [
+                            "CREDIT",
+                            "CREDIT",
+                            "EMI_OPTIONS",
+                            "NET_OPTIONS"
+                        ],
+                        "banks": [
+                            "KOTAK"
+                        ],
+                        "emi_months": [
+                            "0",
+                            "3",
+                            "6",
+                            "9",
+                            "12",
+                            "18",
+                            "24"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/kotak-a0db9a54.svg"
+                },
+                {
+                    "adjustment_type": "CASHBACK_ON_CARD",
+                    "adjustment_id": "FPO250626172916JI4VZ",
+                    "summary": "Flat ₹10 Cashback on Paytm UPI Trxns. Min Order Value ₹500. Valid once per Paytm account",
+                    "contributors": {
+                        "payment_instrument": [
+                            "UPI_COLLECT",
+                            "UPI_INTENT"
+                        ],
+                        "banks": [],
+                        "emi_months": [
+                            "0"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://rukminim1.flixcart.com/www/64/64/promos/02/06/2022/a89d0cb0-9155-4545-bd47-c5c53c8d50b7.png"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250626182451RYQC7",
+                    "summary": "5% off up to ₹750 on IDFC FIRST Power Women Platinum and Signature DebitCards. Min Txn Value: ₹5,000",
+                    "contributors": {
+                        "payment_instrument": [
+                            "CREDIT"
+                        ],
+                        "banks": [
+                            "IDFC"
+                        ],
+                        "emi_months": [
+                            "0"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://rukminim1.flixcart.com/www/128/128/promos/01/09/2023/c00c8f1e-1ae7-49d1-b7e5-0e2df3d11ef7.png?q=100"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250705185902AISC5",
+                    "summary": "No Cost EMI Upto 6 Months",
+                    "contributors": {
+                        "payment_instrument": [
+                            "EMI_OPTIONS"
+                        ],
+                        "banks": [
+                            "ICICI"
+                        ],
+                        "emi_months": [
+                            "6"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/icici-2c9f480b.svg"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250705190116Z9YX8",
+                    "summary": "No Cost EMI Upto 6 Months",
+                    "contributors": {
+                        "payment_instrument": [
+                            "EMI_OPTIONS"
+                        ],
+                        "banks": [
+                            "SBI"
+                        ],
+                        "emi_months": [
+                            "6"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/sbi-7804ae3e.svg"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250705190347GHR57",
+                    "summary": "No Cost EMI Upto 6 Months",
+                    "contributors": {
+                        "payment_instrument": [
+                            "EMI_OPTIONS"
+                        ],
+                        "banks": [
+                            "KOTAK"
+                        ],
+                        "emi_months": [
+                            "6"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/kotak-a0db9a54.svg"
+                },
+                {
+                    "adjustment_type": "CASHBACK_ON_CARD",
+                    "adjustment_id": "FPO250619134128USHPF",
+                    "summary": "5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter",
+                    "contributors": {
+                        "payment_instrument": [
+                            "CREDIT"
+                        ],
+                        "banks": [
+                            "FLIPKARTAXISBANK"
+                        ],
+                        "emi_months": [
+                            "0"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/axis-78501b36.svg"
+                },
+                {
+                    "adjustment_type": "CASHBACK_ON_CARD",
+                    "adjustment_id": "FPO250619135528ZQIZW",
+                    "summary": "5% cashback on Axis Bank Flipkart Debit Card up to ₹750",
+                    "contributors": {
+                        "payment_instrument": [
+                            "CREDIT"
+                        ],
+                        "banks": [
+                            "FLIPKARTAXISBANK"
+                        ],
+                        "emi_months": [
+                            "0"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://img1a.flixcart.com/www/linchpin/fk-cp-pay/axis-78501b36.svg"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250630202506KYC5F",
+                    "summary": "Extra ₹500 off on BOBCARD EMI Transactions on 9 months and above tenures. Min Product Value ₹25000",
+                    "contributors": {
+                        "payment_instrument": [
+                            "EMI_OPTIONS"
+                        ],
+                        "banks": [
+                            "BOBARODA"
+                        ],
+                        "emi_months": [
+                            "9",
+                            "12",
+                            "18",
+                            "24",
+                            "36"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://rukminim1.flixcart.com/www/96/96/promos/31/07/2024/fb560aa6-1104-492b-b747-f458dbae837b.png?q=100"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO250630192819C5TKJ",
+                    "summary": "10% off up to ₹1,250 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+                    "contributors": {
+                        "payment_instrument": [
+                            "EMI_OPTIONS"
+                        ],
+                        "banks": [
+                            "BOBARODA"
+                        ],
+                        "emi_months": [
+                            "6",
+                            "9",
+                            "12",
+                            "18",
+                            "24",
+                            "36"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://rukminim1.flixcart.com/www/96/96/promos/31/07/2024/fb560aa6-1104-492b-b747-f458dbae837b.png?q=100"
+                },
+                {
+                    "adjustment_type": "INSTANT_DISCOUNT",
+                    "adjustment_id": "FPO2506301938399SY1F",
+                    "summary": "10% off up to ₹1,500 on BOBCARD EMI Transactions of 6 months and above tenures, Min TxnValue: ₹7,500",
+                    "contributors": {
+                        "payment_instrument": [
+                            "EMI_OPTIONS"
+                        ],
+                        "banks": [
+                            "BOBARODA"
+                        ],
+                        "emi_months": [
+                            "6",
+                            "9",
+                            "12",
+                            "18",
+                            "24",
+                            "36"
+                        ],
+                        "card_networks": []
+                    },
+                    "display_tags": [
+                        "PAYMENT_OPTIONS"
+                    ],
+                    "image": "https://rukminim1.flixcart.com/www/96/96/promos/31/07/2024/fb560aa6-1104-492b-b747-f458dbae837b.png?q=100"
+                }
+            ]
+        }
+    },
+    "merchant_id": "mp_flipkart",
+    "section_details": {
+        "PREFERRED": {
+            "visible_options_count": 3
+        },
+        "OTHERS": {
+            "visible_options_count": 10
+        },
+        "NEW_VOUCHERS": {
+            "visible_options_count": 1
+        },
+        "LINKED_VOUCHERS": {
+            "visible_options_count": 1
+        }
+    }
+}

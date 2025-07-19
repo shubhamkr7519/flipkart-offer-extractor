@@ -103,16 +103,20 @@ The sample-payload.json file contains a sample payload retrieved using the above
 
 - Only offers under `offer_sections.PBO.offers` are considered.
 - `adjustment_id` is treated as the unique identifier for deduplication.
+- Offer `summary` is assumed to be accurate reflection of business logic and the 
 - If the word "UPI" is found in the summary, we manually add "UPI" in `banks`.
-- The discount is estimated from the summary text using a set of regex rules and it's capped at 50% of the payment amount for practicality to tackle complex edge cases where minimum order value is not present. These kind of cases may occur as several offers are linked to a particular high MRP products. 
+- The discount is estimated from the summary text using a set of regex rules and it's capped at 50% of the payment amount for practicality to tackle complex edge cases where minimum order value is not present. These kind of cases may occur as several offers are linked to a particular high MRP products.
+- Bank and instrument names are assumed to be consistently formatted (e.g., `HDFC` vs `HDFC Bank`). This may require normalization or mapping tables in the future.
+- EMI-related offers are not treated specially yet; they are parsed the same way as standard offers. More complex logic may be needed to differentiate them in production.
+
 
 ---
 
 ## Design Decisions
 
 - **Node.js** and **Express** were chosen for their minimal boilerplate and fast development.
-- **MongoDB** (via Mongoose) was ideal due to flexible schema requirements and easy array querying.
-- `adjustment_id` is used as a unique key to prevent duplicate entries.
+- **MongoDB** (via Mongoose) supports a flexible schema structure, especially with nested contributors and array fields like `banks`, `payment_instrument`, and `emi_months`.
+- `adjustment_id` is used as a **unique constraint** for ingestion deduplication — it is more reliable than using textual summaries which may repeat across offers.
 
 ---
 
@@ -133,7 +137,7 @@ To handle **1,000+ requests per second**, the following strategies can be employ
   - Use stateless APIs to enable better horizontal scale.
 
 - **Rate Limiting**:
-  - Use tools like `express-rate-limit` to protect against abuse.
+  - Use tools like `express-rate-limit` to implement API rate limit to prevent abuse and ensure stability under load.
 
 - **Preprocessing**:
   - During ingestion, precompute and store top offers per bank/payment combo for faster lookup.
@@ -144,11 +148,14 @@ To handle **1,000+ requests per second**, the following strategies can be employ
 
 If given more time, these enhancements would be prioritized:
 
-- **Robust discount parsing** using a rules engine or NLP to improve summary parsing to tackle more complex cases.
-- **Data normalization** for bank and instrument names using mapping tables.
-- **Scaling** as mentioned above for production-grade reliability.
+- **Robust discount parsing** using a rules engine or NLP to improve summary parsing to tackle more complex cases like specific card type, emi options & duartion specific, etc.
+- **Offer expiry handling** by adding `valid_from` and `valid_to` date fields in the schema if present in Flipkart's API response. This allows filtering expired offers and showing only relevant active ones.
+- **Offer Product Mapping** by adding `product_id` in the offer schema, applicable for offers specific to high MRP products.
+- **Data normalization** for query parameters like bank and instrument names using mapping tables.
+- **Scaling improvements** like caching & horizontal scaling (as mentioned above) for production reliability.
+- **Deduplication Beyond `adjustment_id`** as it may change across sessions or token refreshes.
 - **Integration Tests** with tools like Jest.
-- **Admin dashboard** to browse, filter and export stored offers.
+- **Dockerization** for platform-agnostic deployment. 
 
 ---
 

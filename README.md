@@ -163,8 +163,6 @@ If given more time, these enhancements would be prioritized:
 
 The backend has been tested across three key areas to ensure correctness and reliability:
 
----
-
 
 ### 1. Discount Parsing Logic 
 
@@ -177,8 +175,6 @@ The `parseDiscount()` function has been rigorously tested against a wide variety
 - **Mixed offers** that include combinations of the above
 - **Edge cases** like discounts higher than 50% of amount or below minimum order
 
----
-
 
 ### 2. `/offer` Ingestion API
 
@@ -188,7 +184,6 @@ The `parseDiscount()` function has been rigorously tested against a wide variety
 - Manual tagging of `UPI` is verified for applicable offers.
 - Verified DB state in MongoDB after ingestion.
 
----
 
 ### 3. `/highest-discount` Retrieval API
 
